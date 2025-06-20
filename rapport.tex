@@ -1,0 +1,1971 @@
+\documentclass{article}
+\begin{document}
+Dédicaces
+
+Je dédie ce travail à mes chers parents pour leur amour et leurs sacrifices, à mon mari pour son soutien inconditionnel et sa patience, à ma famille pour ses encouragements constants, et à tous ceux qui ont cru en moi et m'ont accompagné tout au long de mon parcours académique.
+
+Remerciements
+
+Je tiens à exprimer ma profonde gratitude et mes sincères remerciements à toutes les personnes qui ont contribué à la réalisation de ce projet de fin d'études.
+
+Tout d'abord, j'adresse mes remerciements les plus chaleureux à Madame Hajer Krichene, mon encadrante académique, pour son accompagnement précieux, ses conseils avisés et sa disponibilité tout au long de ce travail. Son expertise et ses orientations m'ont été d'une aide inestimable pour mener à bien ce projet.
+
+Je remercie également Monsieur Houssem Eddine Ben Mbarek, mon encadrant professionnel, pour son encadrement rigoureux, ses recommandations pertinentes et le partage de son expérience pratique qui ont enrichi considérablement mon travail.
+
+Je souhaite également exprimer ma reconnaissance à tous mes enseignants qui ont contribué à ma formation et m'ont transmis les connaissances nécessaires pour accomplir ce travail.
+
+Un remerciement particulier va à ma famille pour son soutien inconditionnel, ses encouragements constants et sa patience tout au long de mon parcours académique. Sans leur amour et leur confiance, ce projet n'aurait pas pu voir le jour.
+
+Enfin, je remercie tous ceux qui, de près ou de loin, ont contribué à l'aboutissement de ce travail par leurs encouragements et leur soutien.
+
+Table des matières
+
+Introduction Générale1
+
+Chapitre 1 : Cadre général du projet2
+
+Introduction2
+
+1 Présentation de l’entreprise2
+
+1.1 Groupe Comelit2
+
+1.2 Les activités de  Comelit3
+
+2 Présentation du projet5
+
+2.1 Contexte du projet5
+
+2.2 Étude de l’existant6
+
+2.2.1 JUNG HOME6
+
+2.2.2 Legrand – Home + Control6
+
+2.3 Synthèse sur l’étude de l’existant7
+
+2.4 Travail demandé8
+
+3 Étude théorique des objets IoT8
+
+3.1 Architecture Internet des Objets (IoT)8
+
+3.2 Les composants d’une solution IoT10
+
+3.2.1 Microcontrôleur10
+
+3.2.2 Capteur11
+
+3.2.3 Actionneur11
+
+3.2.4 Infrastructure cloud14
+
+3.2.5 Interfaces homme-machine (IHM)14
+
+3.2.6  Technologie de communication14
+
+4 Méthodologie du travail et formalismes adoptés15
+
+4.1 Méthodologie du travail15
+
+4.1.1 L’équipe SCRUM16
+
+4.1.2 Les artefacts de SCRUM16
+
+4.1.3  Les événements de SCRUM16
+
+4.2 Formalisme de conception17
+
+Conclusion17
+
+Chapitre 2 : Phase de planification18
+
+Introduction18
+
+1 Analyse18
+
+1.1 Identification des acteurs18
+
+1.2 Diagramme de cas d’utilisation18
+
+1.3 Diagramme de classes19
+
+1.4 Expression des besoins20
+
+1.4.2 Besoins non fonctionnels21
+
+2 Structure et découpage du projet22
+
+2.1 Identification de l’équipe Scrum22
+
+2.2 Backlog produit22
+
+2.2 Planification des sprints25
+
+4 Environnement de travail26
+
+4.1 Environnement matériel26
+
+4.2 Environnement logiciel26
+
+4.3 Matériels utilisés29
+
+5  Architecture  du  notre  Système  IoT31
+
+Conclusion32
+
+Chapitre 3 : Sprint 1 – Gestion  des dispositifs33
+
+Introduction33
+
+1 Spécification fonctionnelle33
+
+2 Analyse des cas d’utilisations35
+
+2.1 Analyse du cas d’utilisation S’authentifier35
+
+2.2 Analyse du cas d’utilisation Ajouter une lampe35
+
+2.3 Analyse du cas d’utilisation Supprimer une lampe38
+
+2.4 Analyse du cas d’utilisation Contrôler une lampe38
+
+3 Réalisation41
+
+3.1Interfaces de l’application mobile41
+
+3.1.1Interface d’authentification41
+
+3.1.2 Interface d’accueil  et  menu42
+
+3.1.3 Interfaces de gestion des dispositifs43
+
+3.2 Montage du premier prototype45
+
+Conclusion46
+
+Chapitre 4 : Sprint 2 – Gestion des demandes d’accès, suivi des données et des notifications47
+
+Introduction47
+
+1 Spécification fonctionnelle47
+
+2 Analyse des cas d’utilisations48
+
+2 .1 Analyse des cas d’utilisations S’inscrire48
+
+2 .2 Analyse des cas d’utilisations Recevoir des notifications50
+
+2 .3 Analyse des cas d’utilisations Suivre des données capteur51
+
+2 .4 Analyse des cas d’utilisations Suivre température via Dashboard52
+
+2 .5 Analyse des cas d’utilisations Accepter demandes d’accès52
+
+2 .6 Analyse des cas d’utilisations Supprimer demandes d’accès54
+
+3 Réalisation56
+
+3.1Interfaces de l’application mobile56
+
+3.1.1 Interface d’inscription56
+
+3.1.2 Interface de consultation des notifications57
+
+3.1.3 Interface d’accueil57
+
+3.1.4 Interface de suivi de la température via Dashboard58
+
+3.1.5 Interface de gestion des demandes d’accès58
+
+3.2 Montage du deuxième prototype59
+
+Conclusion60
+
+Conclusion Générale61
+
+Table des figures
+
+Figure 1.1 : Logo de Comelit2
+
+Figure 1.2 : Réseau mondial d’entreprises et de filiales de Comelit3
+
+Figure 1.3 : Produit de vidéo surveillance3
+
+Figure 1.4 : Produit anti-intrusion4
+
+Figure 1.5 : Produit de domotique4
+
+Figure 1.6 : Produit de contrôle d’accès4
+
+Figure 1.7 : Système de détection incendie LogiFire5
+
+Figure 1.8 : Interfaces principales de l’application Jung Home6
+
+Figure 1.9 : Interface principale de l’application Home + Control7
+
+Figure 1.10 : Architecture en couches d’un système IoT10
+
+Figure 1.11 : Exemples des microcontrôleurs10
+
+Figure 1.12 : Exemples des capteurs11
+
+Figure 1.13 : Vérin pneumatique12
+
+Figure 1.14 : Moteur hydraulique12
+
+Figure 1.15 : Exemples des actionneurs électriques13
+
+Figure 1.16 : Exemples des actionneurs magnétiques et thermiques13
+
+Figure 1.17 : Serrures mécaniques13
+
+Figure 1.18 : Exemples de technologies de communication15
+
+Figure 1.19 : Processus SCRUM15
+
+Figure 2.1 : Diagramme de cas d’utilisation global du Propriétaire19
+
+Figure 2.2 : Diagramme de cas d’utilisation global du Technicien19
+
+Figure 2.3 : Diagramme de classes20
+
+Figure 2.4 : Visual Studio Code logo26
+
+Figure 2.5 : Git logo27
+
+Figure 2.6 : GitHub logo27
+
+Figure 2.7 : Flutter logo27
+
+Figure 2.8 : Firebase logo28
+
+Figure 2.9 : SendGrid logo28
+
+Figure 2.10 : STM32CubeMX logo29
+
+Figure 2.11 : STM32CubeIDE logo29
+
+Figure 2.12 : NUCLEO-L476RG29
+
+Figure 2.13 : Capteur DHT1130
+
+Figure 2.14 : Capteur Flamme Ky02630
+
+Figure 2.15 : Capteur Gaz MQ230
+
+Figure 2.16 : Module WiFi ESP-0130
+
+Figure 2.17 : Relais30
+
+Figure 2.18 : Architecture du notre Système IoT31
+
+Figure 3.1 : Diagramme de cas d’utilisation ” S’authentifier ”35
+
+Figure 3.3 : Diagramme de cas d’utilisation ” Ajouter une lampe”35
+
+Figure 3.2 : Diagramme de séquence du cas d’utilisation ” S’authentifier ”36
+
+Figure 3.4 : Diagramme de séquence du cas d’utilisation ” Ajouter une lampe”37
+
+Figure 3.5 : Diagramme du cas d’utilisation ” Supprimer une lampe”38
+
+Figure 3.7 : Diagramme de cas d’utilisation” Contrôler une lampe”38
+
+Figure 3.6 : Diagramme de séquence du cas d’utilisation ” Supprimer une lampe”39
+
+Figure 3.8 : Diagramme de séquence du cas d’utilisation ” Contrôler une lampe”40
+
+Figure 3.9 : Interface d’authentification41
+
+Figure 3.10 : Exemples de messages d’erreur d’authentification41
+
+Figure 3.11 : Interface d’ accueil et menu pour propriétaire42
+
+Figure 3.12 : Interface d’ accueil et menu pour technicien42
+
+Figure 3.13 : Interfaces de consultation des dispositifs43
+
+Figure 3.14 : Interfaces d’ajout des dispositifs44
+
+Figure 3.15 : Boîtes de dialogue de confirmation de la suppression d’un dispositif.44
+
+Figure 3.16 : Interfaces de contrôle des dispositifs45
+
+Figure 3.17 : Premier prototype de maison intelligente46
+
+Figure 4.1 : Diagramme de cas d’utilisation “S’inscrire”48
+
+4.2 : Diagramme de séquence du cas d’utilisation ” S’inscrire”49
+
+Figure 4.3 : Diagramme de cas d’utilisation “Recevoir des notifications”50
+
+4.4: Diagramme de séquence du cas d’utilisation ” Recevoir des notifications”50
+
+Figure 4.5 : Diagramme de cas d’utilisation “Suivre des données capteur”51
+
+4.6: Diagramme de séquence du cas d’utilisation ” Suivre des données capteur”51
+
+Figure 4.7 : Diagramme de cas d’utilisation “Suivre température via Dashboard”52
+
+Figure 4.9 : Diagramme de cas d’utilisation “Accepter demandes d’accès”52
+
+4.6: Diagramme de séquence du cas d’utilisation ” Suivre des données capteur”53
+
+4.10: Diagramme de séquence du cas d’utilisation ” Accepter demandes d’accès”54
+
+Figure 4.11 : Diagramme de cas d’utilisation “Supprimer demandes d’accès”54
+
+Figure 4.12 : Diagramme de séquence du cas d’utilisation ” Supprimer demandes d’accès”55
+
+Figure 4.13 : Interface d’inscription56
+
+Figure 4.14 : Messages d’erreur et email automatique envoyé au propriétaire56
+
+Figure 4.15 : Interface de consultation des notifications57
+
+Figure 4.16 : Interface d’accueil57
+
+Figure 4.17 : Interface de suivi de la température via Dashboard58
+
+Figure 4.18 : Interface de gestion des demandes d’accès59
+
+Figure 4.19 : Deuxième prototype de maison intelligente60
+
+Liste des tableaux
+
+Tableau 2.1 : Backlog produit21
+
+Tableau 2.2 :  Découpage du Projet25
+
+Tableau 3.1 : Backlog du sprint 132
+
+Tableau 4.1 : Backlog du sprint 246
+
+Introduction Générale
+
+Une maison intelligente désigne un environnement résidentiel optimisé où l'ensemble des équipements domestiques peut être automatiquement piloté et surveillé à distance depuis n'importe quel endroit disposant d'une connexion Internet, via l'utilisation d'un smartphone ou d'une tablette. Cette révolution numérique transforme nos espaces de vie traditionnels en écosystèmes connectés, sécurisés et intelligents.
+
+Dans le cadre de l'obtention du diplôme d'ingénieur en génie informatique, nous avons été amenés à réaliser, durant cette période de Projet de Fin d'Études (PFE) effectué au sein de l'entreprise Comelit Tunisie, la conception et le développement d'un système domotique . Le concept développé consiste à intégrer  un ensemble de capteurs environnementaux spécialisés (mesure de température, d'humidité, détection de fuites de gaz et de flammes) avec des actionneurs  (Lampes, prises , stores électriques) dans le but de créer un habitat intelligent capable de faciliter le quotidien des utilisateurs en proposant des services  de contrôle centralisé et de surveillance continue en temps réel.
+
+L'application mobile permet aux utilisateurs la possibilité de monitorer l'état complet de leur domicile en temps réel, de recevoir des alertes instantanées lors de la détection de situations dangereuses et de commander l'intégralité de leurs équipements domestiques à distance grâce à une interface ergonomique et sécurisée. 
+
+Le présent rapport détaille l'évolution complète du projet à travers quatre chapitres structurés de la manière suivante :
+
+Le premier chapitre, consacré au cadre général du projet, présente le contexte du projet ainsi que l’entreprise d’accueil Comelit Tunisie. Il inclut également une étude de l’existant à travers l’analyse des solutions domotiques déjà disponibles sur le marché, la définition du travail demandé, une étude théorique des objets connectés (IoT), ainsi que le choix de la méthodologie et du formalisme adoptés pour notre projet.
+
+Le deuxième chapitre, consacré à la phase de planification, expose l'identification  des acteurs impliqués dans le système, l'analyse approfondie des besoins fonctionnelles et non fonctionnelles, la mise en place de l'organisation projet selon la méthodologie agile Scrum, ainsi que l'architecture  du système IoT.
+
+Le troisième chapitre, Sprint 1 - Gestion des dispositifs, détaille la première itération du projet, consacrée à l'implémentation des fonctionnalités d'authentification sécurisé et  de gestion des équipements domestiques (lampes , prises , stores électriques) .
+
+Le quatrième chapitre, Sprint 2 – Gestion des demandes d’accès, suivi des données et notifications , présente la seconde itération du projet, consacrée à l’implémentation des fonctionnalités d’inscription, de gestion des demandes d’accès, de visualisation des données environnementales (température et humidité) , ainsi qu’à la réception de notifications .
+
+Ce rapport se clôture par une conclusion générale accompagnée de quelques perspectives d’amélioration et d’évolution du projet.
+
+Chapitre 1 : Cadre général du projet
+
+Introduction 
+
+Dans ce chapitre, nous avons présenté l'entreprise ainsi que le contexte du projet. Ensuite, nous avons étudié l'existant afin d'identifier les solutions déjà disponibles sur le marché . Puis , nous avons fait une synthèse  sur l’étude de l’existant afin d’extraire les  points  communs  partagés par les systèmes IoT (Internet des Objets). Enfin, nous avons fourni le travail demandé, ainsi qu‘ une  étude théorique des objets IoT et le choix de la méthodologie et du formalisme adoptés pour  notre projet.
+
+1 Présentation de l’entreprise
+
+1.1 Groupe Comelit
+
+Comelit est une entreprise  italienne qui a plus de soixante ans d'expérience dans les technologies et la sécurité. Au fil des ans, elle a construit une bonne réputation en proposant des solutions intéressantes pour les maisons et les entreprises. Ils offrent des produits comme des systèmes de vidéophonie, des solutions de domotique et des dispositifs de contrôle d'accès. Comelit met l'accent sur la sécurité, la communication et le confort avec des produits modernes et fiables. [1]
+
+Figure 1.1 : Logo de Comelit
+
+L’évolution de Comelit a été marquée par plusieurs innovations importantes :
+
+COMELIT POLYPHONY UBERLAUT : Le premier interphone à valve avec une qualité vocale sans précédent. 
+
+AMPLIFICATEUR À TRANSISTOR COMELIT : Intégré, économique, petit et indestructible. 
+
+COMELIT DUETTO PILE : Interphone mains libres à usage domestique très performant. 
+
+COMELIT VISI/7 : Le premier moniteur d'interphone vidéo. 
+
+LE PREMIER INTERPHONE NUMÉRIQUE AU MONDE : le premier interphone numérique qui, avec seulement 3 fils, permet de connecter jusqu’à 999 téléphones. 
+
+COMELIT SIMPLEBUS : Le premier système numérique breveté pour interphones et vidéophones 2 fils + 2 parallèles : une véritable réussite .
+
+RESPONSABLE PLANUX 
+
+COMELIT JE VOIS 
+
+COMELIT DESIGN : Les panneaux externes innovants 3one6, Quadra, Mini, Mini HF, Icona et Maxi prennent vie grâce à la collaboration avec Habits. 
+
+IPCAM162A : la caméra la plus vendue de Comelit.
+
+UNITÉS DE CONTRÔLE ET DÉTECTEURS LOGIFIRE 
+
+"BE SMART" : le seul module qui rend le système plus intelligent pour tous.
+
+Depuis ses débuts, Comelit a continué de grandir et de diversifier ses produits, augmentant sa présence dans le monde. Aujourd'hui, cette entreprise familiale comprend 13 entités, avec un siège, 9 filiales réparties sur 5 continents pour un meilleur service à l'international, 6 centres de R\textbackslash{}&D permettant de concevoir et fabriquer en interne tous les produits proposés sur le marché, ainsi que 4 bureaux de représentation dans des marchés stratégiques.
+
+Figure 1.2 : Réseau mondial d’entreprises et de filiales de Comelit
+
+1.2 Les activités de  Comelit 
+
+Comelit se concentre sur quelques activités principales :
+
+Vidéo surveillance : Comelit propose des solutions de vidéosurveillance avancées, notamment les gammes NEXT et ADVANCE, qui intègrent des technologies telles que l'analyse vidéo approfondie (DVA), la reconnaissance faciale et une application mobile intuitive pour une gestion centralisée.
+
+Figure 1.3 : Produit de vidéo surveillance
+
+Anti-intrusion : Ils ont un système global qui répond à tous vos besoins de sécurité, avec ou sans fil.
+
+Figure 1.4 : Produit anti-intrusion
+
+Domotique et Smart Home : Ça vous permet de contrôler votre maison pour plus de confort et de sécurité.
+
+Figure 1.5 : Produit de domotique
+
+Contrôle d’accès : Cela concerne la vérification des droits d'accès des personnes qui veulent entrer dans un bâtiment. 
+
+Figure 1.6 : Produit de contrôle d’accès
+
+Détection d'incendie : Ils proposent des systèmes de détection notamment la série innovante LogiFire, conçue pour offrir une protection fiable dans divers environnements. 
+
+Figure 1.7 : Système de détection incendie LogiFire
+
+2 Présentation du projet
+
+Dans cette section, nous avons d'abord présenté le contexte du projet. Ensuite, nous avons effectué une étude de l'existant pour identifier les solutions actuelles. Puis , nous avons fait une synthèse  sur l’étude de l’existant. Enfin, nous avons détaillé le travail demandé.
+
+2.1 Contexte du projet
+
+Ce travail a été réalisé dans le cadre du Projet de Fin d'Études (PFE) afin d’obtenir le diplôme d'ingénieur en génie informatique à l'École Nationale Supérieure d'Ingénieurs de Tunis (ENSIT ). Il a été développé au sein de l'entreprise Comelit Tunisie. L'objectif principal de ce projet est la conception et la mise en œuvre d'un système domotique , basé sur  l'Internet des Objets (IoT), permettant une gestion centralisée des dispositifs domestiques via une application mobile dédiée.
+
+Les maisons intelligentes connectées  représentent une nouvelle façon de vivre plus confortable et pratique, où les dispositifs interconnectés améliorent le confort et la sécurité.
+
+Avec l'Internet des Objets (IoT), il devient désormais possible d'interconnecter les différents équipements de la maison pour les rendre plus autonomes et plus réactifs aux besoins des utilisateurs.
+
+Une maison intelligente connectée  permet de contrôler à distance l’éclairage, les prises électriques et les stores via un smartphone ou une tablette. Grâce à des capteurs intelligents, elle assure une surveillance continue de votre domicile. En cas de détection de gaz ou de flamme, une alarme se déclenche automatiquement et une notification est immédiatement envoyée pour vous alerter de l’anomalie .
+
+Grâce aux capteurs (température, humidité, gaz, flamme) et à la connectivité Internet, ce système permet un suivi en temps réel de l'environnement intérieur. Ce type de système rend la maison plus sécurisée, plus pratique et mieux adaptée à la vie moderne.
+
+Aussi , les applications mobiles sont primordiales : elles proposent une interface simple pour contrôler tous les appareils, suivre les informations des capteurs, recevoir des notifications en temps réel et gérer les équipements en fonction des besoins de chaque utilisateur.
+
+2.2 Étude de l’existant
+
+Dans cette section, nous présentons deux solutions déjà disponibles sur le marché. Cette étude de l'existant vise à apporter plus de clarté sur ce domaine.
+
+2.2.1 JUNG HOME
+
+JUNG HOME est un système domotique développé par l'entreprise allemande Albrecht Jung. Il repose sur une infrastructure électrique conventionnelle de 230 V et utilise la technologie Bluetooth Mesh pour interconnecter ses composants. 
+
+L'application mobile JUNG HOME permet aux utilisateurs de gérer divers aspects de leur maison intelligente, tels que l'éclairage, les stores, la température et la consommation d'énergie. Elle offre des fonctionnalités telles que la configuration de scénarios personnalisés, la commande vocale via des assistants comme Amazon Alexa ou Google Home (avec une passerelle dédiée), et la surveillance de la consommation énergétique en temps réel. [2]
+
+Figure 1.8 : Interfaces principales de l’application Jung Home
+
+2.2.2 Legrand – Home + Control
+
+Legrand – Home + Control est une solution développée par Legrand, entreprise française reconnue dans le domaine des infrastructures électriques et des bâtiments connectés. Cette application permet de piloter facilement les équipements électriques d’une maison (lumières, volets roulants, prises, etc.) grâce aux produits Céliane with Netatmo. Elle utilise des technologies sans fil comme le Wi-Fi  pour assurer le contrôle à distance via smartphone, tablette ou assistant vocal. Grâce à une interface intuitive, Home + Control offre des fonctionnalités avancées comme la création de scénarios (départ, arrivée, lever, coucher), la gestion de la consommation d’énergie, la réception de notifications en cas d’anomalie et une installation rapide via une configuration guidée. [3]
+
+Figure 1.9 : Interface principale de l’application Home + Control
+
+2.3 Synthèse sur l’étude de l’existant
+
+Tous les systèmes IoT s'appuient sur des points communs :
+
+Le choix de la technologie de communication la plus appropriée : Les technologies de communication dans les systèmes IoT(Internet des Objets), telles que le Wi-Fi, le Bluetooth, le Zigbee, le LoRa et le NB-IoT, jouent un rôle essentiel dans l'interconnexion des dispositifs. Ces protocoles assurent la transmission efficace et sécurisée des données entre les objets connectés.
+
+La tendance vers le développement avec des MCU et capteurs : La tendance actuelle dans le domaine de l'Internet des objets (IoT) s'oriente vers l'adoption des microcontrôleurs (MCU) et des capteurs à très faible consommation d'énergie. Cette évolution répond à la nécessité de prolonger l'autonomie des dispositifs IoT tout en maintenant une performance de calcul adéquate pour des applications variées. De plus, ces composants sont de plus en plus accessibles financièrement, rendant leur adoption encore plus attrayante pour les développeurs et les entreprises.
+
+L’importance de l'utilisation d'interfaces homme-machine (IHM) :Les interfaces homme-machine (IHM) jouent un rôle essentiel dans les systèmes IoT en permettant aux utilisateurs d'interagir efficacement avec les dispositifs. Des interfaces conviviales facilitent la configuration, la surveillance et le contrôle des systèmes, améliorant ainsi l'expérience utilisateur et la gestion des dispositifs.
+
+La réception en temps réel des notifications : La réception en temps réel des notifications est essentielle pour garantir la fiabilité des systèmes IoT, notamment dans des domaines critiques tels que la sécurité, la maintenance industrielle ou la santé. Un système de notifications efficace permet de détecter et de réagir rapidement aux événements, assurant ainsi une surveillance continue.
+
+2.4 Travail demandé
+
+Le projet propose le développement d’un système domotique intelligent connectée, basé sur l’IoT, combinant capteurs environnementaux (température, humidité, gaz, flamme) et actionneurs (lampes, prises, stores électriques , buzzer).
+
+Afin de piloter ce système, une application mobile dédiée est développée. Elle offre une interface facile à utiliser permettant à l’utilisateur de contrôler en temps réel les différents équipements et de recevoir des notifications.
+
+Parallèlement, une infrastructure cloud est mise en place à l’aide de la plateforme ThingSpeak. Cette solution permet de collecter et stocker les données. Les données collectées comprennent les mesures des capteurs (température, humidité, gaz, flamme) ainsi que les états des actionneurs (état des lampes, prises, stores). Ces informations sont envoyées à ThingSpeak via des canaux privés, assurant ainsi la confidentialité et la sécurité des données.
+
+Ce système permettra :
+
+La surveillance continue de l’environnement intérieur avec déclenchement automatique d’un buzzer en cas de détection de gaz ou de flamme,
+
+Le contrôle à distance des appareils domestiques depuis un smartphone,
+
+La gestion dynamique des équipements (ajout/suppression),
+
+L’affichage en temps réel des données capteurs,
+
+L’envoi de notifications instantanées pour alerter l’utilisateur en cas d’anomalie.
+
+Cette solution apporte un environnement domestique intelligent, sécurisé et personnalisable, tout en améliorant le confort et en réduisant les risques pour les occupants.
+
+3 Étude théorique des objets IoT
+
+Dans cette section, nous définissons quelques notions de base concernant l’architecture Internet des Objets (IoT) et les composants d’une solution IoT
+
+3.1 Architecture Internet des Objets (IoT)
+
+​L'Internet des objets (IoT, pour Internet of  Things) désigne un réseau de dispositifs physiques connectés à Internet, capables de collecter, partager et échanger des données. Équipés de capteurs, de logiciels et de technologies de connectivité, ces objets communiquent entre eux et avec des systèmes informatiques, souvent sans intervention humaine directe. Cependant, l'interaction humaine demeure essentielle lors des phases de configuration, de connexion des équipements et de récupération des informations utiles.​
+
+L'IoT couvre une large gamme d’applications, notamment dans les maisons intelligentes (thermostats, éclairage, appareils électroménagers), les infrastructures urbaines (gestion du trafic, surveillance de la qualité de l'air) et les environnements industriels (maintenance prédictive, optimisation des processus). Son objectif principal est d'améliorer l'efficacité, la productivité et le confort en automatisant les tâches et en fournissant des données en temps réel pour une meilleure prise de décision. [4]
+
+L’architecture IoT repose en général sur cinq couches principales [5] :
+
+Couche de perception :
+
+Cette couche est responsable de convertir des signaux analogiques en données numériques et vice versa. Elle inclut :
+
+Capteurs : mesurent des paramètres physiques (température, humidité, etc.) et les convertissent en signaux électriques. Ils sont généralement  petits et consomment peu d’énergie.
+
+Actionneurs : reçoivent des signaux du système IoT et exécutent des actions physiques (moteurs, bras robotiques, etc.).
+
+Machines/dispositifs : peuvent être connectés à des capteurs/actionneurs ou en faire partie intégrante.
+
+Couche réseau :
+
+La couche réseau assure la transmission des données entre les objets connectés, les serveurs, les passerelles et les services cloud. Elle utilise diverses technologies de communication (Ethernet, ZigBee, Bluetooth, WiFi, Réseaux cellulaires (4G/5G) ...), selon les besoins.
+
+Couche de traitement de données:
+
+La couche de traitement accumule, stocke et traite les données provenant de la couche précédente. 
+
+Couche Applicative :
+
+La couche application est ce avec quoi l’utilisateur interagit. C’est ce qui est chargé de fournir des services spécifiques à l’application à l’utilisateur.
+
+Couche de sécurité :
+
+Cette couche est transverse à toutes les couches précédentes.
+
+Figure 1.10 : Architecture en couches d’un système IoT
+
+3.2 Les composants d’une solution IoT
+
+Dans cette section, nous décrirons les composants essentiels d'une solution IoT, tels que les microcontrôleurs, les capteurs, les actionneurs, l’infrastructure cloud , les interfaces homme-machine (IHM) et les techniques de communication .
+
+3.2.1 Microcontrôleur
+
+Un microcontrôleur est un circuit intégré et compact, conçu pour régir une opération spécifique et dans un système intégré. Il comprend un processeur, une mémoire et des périphériques d’entrée et de sortie sur une seule carte ou une seule puce. Ces circuits sont utilisés dans les véhicules, les robots, les machines industrielles, les appareils médicaux, les émetteurs-récepteurs radio mobiles, les distributeurs automatiques ou encore les appareils ménagers. [6]
+
+Figure 1.11 : Exemples des microcontrôleurs
+
+3.2.2 Capteur
+
+Un capteur est un dispositif électronique capable de détecter et de mesurer des variables physiques ou environnementales telles que la température, l’humidité, le mouvement, la lumière, les gaz, la pression, la proximité, etc. Ces capteurs sont dotés de capacités de communication, leur permettant de transmettre les données collectées vers d’autres appareils intelligents ou des serveurs. Parmi les plus courants, les capteurs de température et d’humidité surveillent les conditions climatiques, essentiels en agriculture pour optimiser l'irrigation et en industrie pour le contrôle des environnements sensibles. Les capteurs de mouvement et de présence détectent les déplacements, utilisés dans la sécurité et l'automatisation des bâtiments intelligents. Les capteurs de lumière mesurent l'intensité lumineuse, permettant l'ajustement automatique de l'éclairage dans les espaces publics et privés. Les capteurs de gaz et de qualité de l'air détectent la concentration de gaz spécifiques, assurant la sécurité dans les environnements industriels et urbains. Les capteurs de pression et de force mesurent les variations de pression, utilisés dans diverses applications, telles que la surveillance des niveaux de liquides dans les réservoirs, la détection des variations de poids dans les dispositifs de pesage, et même dans les systèmes de freinage intelligents pour les véhicules. Enfin, les capteurs de proximité et de distance détectent la présence ou la distance d'objets, intégrés dans les dispositifs de détection d’obstacles pour les véhicules autonomes, les portes automatiques, les distributeurs de billets, les dispositifs de détection de stationnement. Les capteurs offrent de nombreux avantages, notamment la collecte de données précises, une surveillance en temps réel d’équipement,  l’automatisation des tâches, l’amélioration de l’efficacité opérationnelle et la prise de décisions éclairées basées sur des données fiables. [7] Grâce à leur taille compacte, leur faible consommation d'énergie et leur coût de plus en plus abordable, ces capteurs sont largement déployés dans des domaines variés, allant de la domotique à l'industrie, en passant par la santé et l'agriculture .
+
+Figure 1.12 : Exemples des capteurs
+
+3.2.3 Actionneur
+
+Un actionneur est un dispositif capable de produire une action physique à partir de l’énergie qu’il reçoit. Il existe différents types d'actionneurs, notamment pneumatiques, hydrauliques, électriques, magnétiques, thermiques et mécaniques [8].
+
+Actionneurs pneumatiques : Les actionneurs pneumatiques utilisent de l'air comprimé pour générer un mouvement. Ils peuvent être utilisés pour diverses applications, telles que le déplacement de pièces de machines ou le contrôle de la position de vannes. Ils sont souvent préférés pour les applications qui nécessitent une force élevée, des temps de réponse rapides ou des environnements antidéflagrants . Exemple   le vérin pneumatique.
+
+Figure 1.13 : Vérin pneumatique
+
+ Actionneurs hydrauliques : Les actionneurs hydrauliques utilisent la pression du fluide pour générer un mouvement. Ils sont couramment utilisés pour des applications lourdes telles que les équipements de construction, les machines de fabrication et les robots industriels. Les actionneurs hydrauliques offrent des niveaux élevés de force, de durabilité et de fiabilité. Exemple le moteur hydraulique.
+
+Figure 1.14 : Moteur hydraulique
+
+Actionneurs électriques : Les actionneurs électriques utilisent l'énergie électrique pour générer un mouvement. Ils peuvent être entraînés par des moteurs à courant alternatif ou continu et sont souvent utilisés dans des applications qui nécessitent un contrôle précis, un faible niveau de bruit et peu d'entretien. Les actionneurs électriques sont couramment utilisés dans les systèmes d'automatisation, les dispositifs médicaux et les équipements de laboratoire. Les actionneurs électriques sont aussi capables de produire un signal lumineux (LED), d’émettre un bruit (buzzer) et de contrôler le débit d’un liquide (électrovanne). 
+
+Figure 1.15 : Exemples des actionneurs électriques
+
+Actionneurs magnétiques et thermiques : Les actionneurs magnétiques et thermiques sont deux types d'actionneurs qui utilisent respectivement les changements magnétiques et de température pour générer un mouvement. Les actionneurs magnétiques utilisent des champs magnétiques pour générer une force (Relais électromagnétique). Les actionneurs thermiques utilisent la dilatation ou la contraction des matériaux en réponse aux changements de température (Fusible thermique). Ces deux actionneurs sont couramment utilisés dans les systèmes micro-électromécaniques (MEMS) et d'autres applications miniaturisées. 
+
+Figure 1.16 : Exemples des actionneurs magnétiques et thermiques
+
+Actionneurs mécaniques : Les actionneurs mécaniques utilisent des mécanismes physiques tels que des leviers, des engrenages ou des cames pour générer un mouvement. Les actionneurs mécaniques sont couramment utilisés dans des applications où le faible coût, la simplicité de fonctionnement et la durabilité sont importants. Il s'agit par exemple de machines à manivelle, de systèmes de vannes manuelles et de serrures mécaniques.
+
+Figure 1.17 : Serrures mécaniques
+
+3.2.4 Infrastructure cloud
+
+​ Le terme de Cloud  désigne des serveurs accessibles via le web, mais aussi les logiciels et bases de données exécutés sur ces machines. Les serveurs Cloud sont situés dans des Data Centers partout dans le monde. En utilisant le Cloud Computing, les utilisateurs et les entreprises n’ont plus besoin de gérer leurs propres serveurs physiques. Elles n’ont même plus besoin d’exécuter les applications logicielles sur leurs propres machines. Grâce au Cloud, les utilisateurs peuvent accéder aux mêmes fichiers et applications depuis n’importe quel appareil. Pour cause, le calcul et le stockage sont effectués sur les serveurs d’un Data Center plutôt que localement sur l’appareil de l’usager. Pour les entreprises, adopter le Cloud Computing permet de réduire les coûts et le temps consacré à l’IT. Il n’est plus nécessaire de maintenir et de mettre à jour ses propres serveurs, puisque les vendeurs Cloud s’en chargent. C’est un changement particulièrement important pour les petites entreprises, qui n’auraient pas forcément les moyens d’avoir leur propre infrastructure interne. Le Cloud permet une externalisation à moindre coût, tout en simplifiant la collaboration en laissant les employés accéder aux mêmes fichiers et applications depuis n’importe où. [9]
+
+3.2.5 Interfaces homme-machine (IHM)
+
+L'IHM (Interface Homme-Machine) se réfère à une interface utilisateur ou un panneau de commande qui permet à une personne de communiquer avec une machine, un système ou un dispositif. Bien que ce terme puisse être appliqué à tout type d'affichage permettant à l'utilisateur d'interagir avec un dispositif (comme un distributeur de billets par exemple), il est généralement utilisé dans le cadre des processus industriels de contrôle et de surveillance des machines de production. [10]
+
+3.2.6  Technologie de communication
+
+​ Les technologies de communication sont nombreuses, prenant par exemple [11]:
+
+Wi-Fi : Le Wi-Fi est une technologie de réseau local sans fil basée sur la norme IEEE 802.11, qui permet aux appareils de se connecter à Internet sans fil. Le Wi-Fi est largement utilisé dans les applications IoT, notamment dans les environnements résidentiels et commerciaux.
+
+Bluetooth : Bluetooth est une technologie de communication sans fil à courte portée adaptée à la transmission et à la communication de données entre appareils. Le Bluetooth est largement utilisé dans les applications IoT, en particulier dans l'électronique grand public et les appareils médicaux.
+
+ZigBee : ZigBee est une technologie de communication sans fil à faible consommation adaptée à la communication d'appareil à appareil et à la transmission de données. ZigBee est largement utilisé dans les applications IoT telles que les bâtiments intelligents, l'agriculture intelligente et les transports intelligents.
+
+LoRa : LoRa est une technologie de réseau local sans fil (LPWAN) à faible consommation adaptée aux applications IoT qui nécessitent une couverture longue portée et une faible consommation d'énergie.
+
+NB-IoT: NB-IoT (Narrowband Internet of Things) est une technologie de communication IoT à bande étroite adaptée aux applications IoT qui nécessitent une couverture à large portée et une faible consommation d'énergie.
+
+Figure 1.18 : Exemples de technologies de communication
+
+4 Méthodologie du travail et formalismes adoptés
+
+Dans cette section, nous allons  présenter la  méthodologie du travail et formalisme de conception adoptés.
+
+4.1 Méthodologie du travailAu cours de ce stage, nous adoptons le Framework Scrum comme cadre de travail privilégié afin de garantir le bon déroulement de toutes les étapes de notre projet et d’en assurer le développement optimal.
+
+Le Framework SCRUM est une approche Agile pour la gestion de projets.
+
+SCRUM repose sur des itérations courtes appelées sprints, qui durent généralement de deux à quatre semaines. Chaque sprint est précédé d’une réunion de planification de sprint, où l’équipe Scrum sélectionne les éléments de travail (items) à réaliser pendant le sprint.
+
+Le Framework SCRUM est conçu pour favoriser la transparence, l’inspection et l’adaptation à travers des cycles de travail itératifs et rapides. Il permet aux équipes de développement de travailler de manière plus efficace, en encourageant la collaboration, la communication et la responsabilisation individuelle. [12]
+
+Figure 1.19 : Processus SCRUM
+
+4.1.1 L’équipe SCRUML’équipe Scrum est composée de différents membres ayant des rôles et des responsabilités spécifiques. Les membres de l’équipe Scrum travaillent ensemble pour livrer les fonctionnalités du produit, en suivant les principes et les pratiques de la méthodologie Scrum. Voici les rôles et les responsabilités de chaque membre de l’équipe Scrum :
+
+Product Owner : le propriétaire du produit est responsable de la vision globale du produit, de la définition des fonctionnalités et de la priorisation du backlog de produit.
+
+Scrum Master : le maître Scrum est responsable de la gestion du processus Scrum, de la facilitation des réunions et de l’aide aux membres de l’équipe à suivre les pratiques Scrum.
+
+L’équipe de développement : les développeurs sont responsables de la conception, du développement et de la livraison des fonctionnalités du produit, en suivant les pratiques Scrum et les normes de qualité.
+
+4.1.2 Les artefacts de SCRUMScrum utilise trois artefacts clés pour soutenir la gestion du processus de développement de produit. Ces artefacts sont :
+
+Product Backlog : c’est une liste ordonnée de toutes les fonctionnalités, les améliorations et les corrections de bugs requises pour le produit. Le Product Owner est responsable de la gestion et de la mise à jour de cette liste en fonction des commentaires des parties prenantes et de l’évolution des besoins du marché.
+
+Sprint Backlog : c’est une liste d’éléments de travail du Product Backlog sélectionnés pour être réalisés pendant le sprint en cours. L’équipe de développement est responsable de la gestion et de la mise à jour de cette liste tout au long du sprint.
+
+Product Increment : c’est la somme de toutes les fonctionnalités réalisées pendant le sprint en cours et les sprints précédents. Le Product Increment doit être testé, intégré, et prêt à être livré au client à la fin de chaque sprint.
+
+4.1.3  Les événements de SCRUMScrum utilise des événements (ou cérémonies) pour structurer le processus de développement de produit. Voici les événements Scrum les plus couramment utilisés :
+
+La réunion de planification de sprint : cette réunion a lieu au début de chaque sprint et permet à l’équipe Scrum de définir les objectifs du sprint, de sélectionner les éléments de travail à réaliser, et de planifier les tâches à accomplir.
+
+La réunion quotidienne (Daily stand-up meeting) : c’est une réunion quotidienne de 15 minutes où chaque membre de l’équipe Scrum présente son travail accompli depuis la dernière réunion quotidienne, ses plans pour le travail à venir, et les éventuels obstacles rencontrés.
+
+La revue de sprint (Sprint review) : c’est une réunion de fin de sprint où l’équipe Scrum présente les fonctionnalités développées au cours du sprint au Product Owner et aux parties prenantes. Cette revue permet de recueillir des commentaires et des suggestions pour améliorer le produit.
+
+La rétrospective de sprint : c’est une réunion de fin de sprint où l’équipe Scrum examine les processus de travail et les pratiques utilisées pendant le sprint, afin de trouver des moyens d’améliorer la qualité et l’efficacité du travail.
+
+4.2 Formalisme de conception
+
+Nous avons choisi d’utiliser la méthodologie UML , Le langage UML, aussi appelé Unified Modeling Language, qui se traduit par Langage de Modélisation Unifié, est un langage de modélisation graphique. Il est utilisé pour la conception et la représentation visuelle de tous types de système informatique. Pour avoir une approche statique et dynamique du logiciel, Il existe différentes formes de modélisation d’application : diagramme de cas d’utilisation, de séquences, de classes, de packages  , d’états ,etc... [13]
+
+Dans notre projet, nous avons utilisé deux types de diagrammes UML pour modéliser notre solution :​
+
+Diagrammes de cas d'utilisation : ils décrivent les interactions entre les utilisateurs (acteurs) et le système, offrant une vue d'ensemble des fonctionnalités attendues. ​
+
+Diagrammes de séquence : ils illustrent l'ordre chronologique des messages échangés entre les objets du système. 
+
+Diagrammes de classes : est une présentation statique de système. Ils permettent de modéliser les classes du système et leurs relations.
+
+Conclusion
+
+Dans ce chapitre, nous avons présenté l’entreprise ainsi que le contexte global du projet. Nous avons identifié des solutions existantes et nous avons fait une synthèse  sur l’étude de l’existant. Nous avons ainsi clôturé ce chapitre par une étude théorique des objets IoT et  le choix de la méthodologie et du formalisme adoptés de notre projet.Le prochain chapitre sera dédié à la Phase de planification .
+
+Chapitre 2 : Phase de planification
+
+Introduction 
+
+Dans  ce  chapitre,  nous  débutons par une analyse , comprenant l'identification des acteurs principaux , la modélisation de leurs interactions avec le système à travers des diagrammes de cas d'utilisation, le diagramme de classes et l’expression des besoins fonctionnels et non fonctionnels de notre application . Ensuite, nous définissons la structure organisationnelle du projet en adoptant la méthodologie Scrum. Nous établissons également le backlog produit et planifions les sprints . Enfin, nous présentons l'environnement de travail, détaillant les environnements matérielles et logicielles utilisées, ainsi que les composants matériels intégrés dans le système.
+
+1 Analyse 
+
+Dans cette section, Nous commençons par l’identification des acteurs, ensuite nous proposons le diagramme des cas d’utilisation global pour chacun d’eux et le diagramme de classe global . Enfin nous présentons les besoins fonctionnels et non fonctionnels de notre projet.
+
+1.1 Identification des acteurs
+
+Un acteur représente une entité externe utilisant l'application et ayant la capacité d'effectuer des actions sur celle-ci. 
+
+Les acteurs de ce projet sont :
+
+Le Propriétaire : Il gère les demandes d’accès et reçoit des notifications. Il consulte la température ambiante via un tableau de bord. Il gère les lampes, les prises et les stores électriques en les ajoutant, supprimant, contrôlant et en consultant leur état. Il peut également consulter la liste de tous les dispositifs connectés.
+
+Le Technicien : Il consulte la liste  de tous les dispositifs connectés. Il peut ajouter ou supprimer des lampes, des prises et des stores électriques. 
+
+1.2 Diagramme de cas d’utilisation
+
+Le diagramme de cas d'utilisation propose une représentation graphique des interactions entre les utilisateurs et le système. 
+
+Figure 2.1 : Diagramme de cas d’utilisation global du Propriétaire
+
+Figure 2.2 : Diagramme de cas d’utilisation global du Technicien
+
+1.3 Diagramme de classes
+
+La figure 2.3 présente le diagramme de classes de notre projet, illustrant la structure et les relations entre les différentes entités du système de maison connectée.
+
+Figure 2.3 : Diagramme de classes
+
+1.4 Expression des besoins
+
+Dans cette section, nous identifions les besoins fonctionnels et non fonctionnels de notre système .1.4.1 Besoins fonctionnels
+
+L’objectif de notre application est de fournir un système intelligent permettant au propriétaire de maison de gérer efficacement tous les dispositifs connectés. Le système doit garantir les fonctionnalités suivantes :
+
+Contrôle et gestion des dispositifs
+
+Le propriétaire peut gérer et contrôler les équipements connectés de la maison (lampes, prises, stores électriques) directement à partir de l’application mobile.
+
+Contrôle et gestion de l’éclairage
+
+Le propriétaire peut :
+
+Allumer ou éteindre les lampes normales,
+
+Allumer, éteindre et régler la luminosité des lampes variées .
+
+Contrôle et gestion des prises connectées
+
+Le propriétaire peut activer ou désactiver les prises électriques, selon ses besoins.
+
+Contrôle et gestion des stores électriques
+
+Le propriétaire peut :
+
+Monter, descendre ou arrêter les stores électriques à distance.
+
+Gestion des dispositifs connectés
+
+Le système permet :
+
+L’ajout de nouveaux équipements (lampes, prises, stores), avec vérification préalable de la disponibilité des sorties nécessaires,
+
+La suppression d’équipements existants,
+
+Gestion des utilisateurs et des autorisations
+
+Le système permet au propriétaire de :
+
+Gérer les demandes d’accès ( accepter avec une échéance qui désactive automatiquement, supprimer)
+
+Consultation des données des capteurs
+
+L’application permet de consulter en temps réel les données des capteurs installés (température, humidité) .
+
+Réception des notifications et alertes
+
+Le propriétaire reçoit automatiquement des notifications en cas de danger détecté dans la maison, notamment :
+
+Détection de gaz.
+
+Détection d’incendie .
+
+En plus de la notification sur l’application, un buzzer se déclenche automatiquement afin d’avertir les occupants de manière sonore et immédiate.
+
+1.4.2 Besoins non fonctionnels
+
+Dans cette partie, nous présentons les besoins non fonctionnels de notre application.
+
+Ergonomie des interfaces
+
+Les interfaces de l’application mobile doivent être ergonomiques et facile à utiliser, même pour des utilisateurs non expérimentés. La navigation doit être claire et les fonctionnalités facilement accessibles.
+
+Sécurité
+
+La sécurité des données et des accès est primordiale.
+
+Chaque utilisateur doit s’authentifier pour accéder à l’application.
+
+Des droits d’accès doivent être définis pour limiter certaines fonctionnalités selon le profil (propriétaire, technicien).
+
+Disponibilité
+
+L’accès à l’application doit être assuré en tout temps et en tout lieu.
+
+Réactivité en temps réel
+
+L’application doit fournir des mises à jour et des réponses en temps réel, avec un temps de réponse plus réduire pour les actions critiques, assurant ainsi une interaction fluide et immédiate.
+
+2 Structure et découpage du projet
+
+Dans cette section ,nous commençons par l’identification de l’équipe Scrum, l’ établissement du backlog de produit et la planification des sprints.
+
+2.1 Identification de l’équipe Scrum
+
+SCRUM nécessite la collaboration de plusieurs intervenants, pour notre projet :
+
+• Product Owner : Est notre encadrant professionnel Mr. Houssem Eddine Ben Mbarek 
+
+• Scrum Master : Est notre encadrante pédagogique Mme. Hajer  Krichene 
+
+• Scrum Team : Est Emna Ben Abdallah
+
+2.2 Backlog produit 
+
+Le backlog  produit (Product Backlog en anglais) est une liste ordonnée de toutes les fonctionnalités, caractéristiques  à réaliser pour un produit ou un projet. Il s’agit d’un élément clé de la méthode SCRUM et  est  utilisé  pour  planifier, prioriser et gérer le travail de l’équipe de développement.
+
+Tableau 2.1 : Backlog produit
+
+ID 
+
+Fonctionnalités
+
+Acteur
+
+ID
+
+User Stories
+
+Priorités
+
+1
+
+S’authentifier
+
+Propriétaire
+
+1.1
+
+En tant qu’utilisateur de
+
+l’application, je peux m’authentifier
+
+Pour réaliser mes fonctionnalités.
+
+Élevée
+
+Technicien
+
+1.2
+
+2
+
+Gérer les demandes d’accès
+
+Propriétaire
+
+2.1
+
+En tant que propriétaire, je peux accepter  une demande d’accès.
+
+Élevée
+
+En tant que propriétaire, je peux supprimer une demande d’accès.
+
+Élevée
+
+3
+
+Suivre température via Dashboard
+
+Propriétaire
+
+3.1
+
+En tant que propriétaire,
+
+je peux suivre température via Dashboard.
+
+Moyenne
+
+4
+
+Recevoir des notifications
+
+Propriétaire
+
+4.1
+
+En tant que propriétaire,
+
+je peux recevoir des notifications(alerte fuite de gaz , incendie).
+
+Moyenne
+
+5
+
+S'inscrire
+
+Technicien
+
+5.1
+
+En tant que technicien,
+
+je peux m'inscrire. 
+
+Moyenne
+
+6
+
+Suivre des données capteur
+
+Propriétaire
+
+6.1
+
+En tant que propriétaire,
+
+je peux suivre des données capteur (température, humidité) .
+
+Moyenne
+
+7
+
+Gérer les dispositifs
+
+Propriétaire
+
+7.1
+
+En tant que propriétaire,
+
+je peux consulter  liste de  luminosité.
+
+Élevée
+
+En tant que propriétaire,
+
+je peux consulter  liste des prises.
+
+Élevée
+
+En tant que propriétaire,
+
+je peux consulter  liste des stores.
+
+Élevée
+
+En tant que propriétaire,
+
+je peux ajouter  une lampe normale ou  une lampe variée.
+
+Élevée
+
+En tant que propriétaire,
+
+je peux supprimer  une lampe normale ou  une lampe variée.
+
+Élevée
+
+En tant que propriétaire,
+
+je peux contrôler   une lampe normale ou  une lampe variée.
+
+Élevée
+
+En tant que propriétaire,
+
+je peux ajouter  une prise.
+
+Élevée
+
+En tant que propriétaire,
+
+je peux supprimer  une prise.
+
+Élevée
+
+En tant que propriétaire,
+
+je peux contrôler  une prise.
+
+Élevée
+
+En tant que propriétaire,
+
+je peux ajouter  un store électrique .
+
+Élevée
+
+En tant que propriétaire,
+
+je peux supprimer  un store électrique .
+
+Élevée
+
+En tant que propriétaire,
+
+je peux contrôler   un store électrique .
+
+Élevée
+
+Technicien
+
+7.2
+
+En tant que technicien,
+
+je peux consulter  liste de  luminosité.
+
+Élevée
+
+En tant que technicien,
+
+je peux consulter  liste des  prises.
+
+En tant que technicien,
+
+je peux consulter  liste des stores.
+
+En tant que technicien,
+
+je peux supprimer  une lampe normale ou  une lampe variée.
+
+Élevée
+
+En tant que technicien,
+
+je peux ajouter  une lampe normale ou  une lampe variée.
+
+En tant que technicien,
+
+je peux ajouter  une prise.
+
+Élevée
+
+En tant que technicien,
+
+je peux supprimer  une prise.
+
+Élevée
+
+En tant que technicien,
+
+je peux ajouter  un store électrique .
+
+Élevée
+
+En tant que technicien,
+
+je peux supprimer  un store électrique .
+
+Élevée
+
+2.2 Planification des sprints
+
+La planification des sprints est une étape primordiale dans cette méthodologie. Le tableau 2.2 ci-dessous présente le découpage du projet :
+
+Tableau 2.2 :  Découpage du Projet
+
+Sprint
+
+Fonctionnalités
+
+Sprint 1 – Gestion les dispositifs 
+
+S’Authentifier
+
+Gérer  des dispositifs
+
+Sprint 2 – Gestion des demandes d’accès, suivi des données et des notifications
+
+S'inscrire
+
+Gérer les demandes d’accès
+
+Suivre température via Dashboard
+
+Suivre des données capteur (température, humidité) 
+
+Recevoir des notifications
+
+4 Environnement de travail
+
+Dans cette section, nous allons commencer par définir l’environnement matériel, suivi de l’environnement logiciel et enfin les matériels utilisés.
+
+4.1 Environnement matériel
+
+Ce projet a été réalisé en utilisant un ordinateur ayant les caractéristiques suivantes:
+
+Ordinateur portable : Dell
+
+Système d’exploitation : Windows 11 (64 Bits)
+
+Processeur : Intel(R) Core i7 (13th génération)
+
+RAM : 16,0 Go
+
+4.2 Environnement logiciel
+
+Notre environnement logiciel utilisé durant la conception et la réalisation comporte :
+
+Visual Studio Code : Visual Studio Code (VS Code) est un éditeur de code source et un environnement de développement intégré (IDE) de Microsoft. Il est open-source et cross-platform, c’est-à-dire qu’il fonctionne sur Windows, Linux et Mac. Il a été conçu pour les développeurs web, mais il prend en charge de nombreux autres langages de programmation tels que C++, C\textbackslash{}#, Python, Java, etc. [14]
+
+Figure 2.4 : Visual Studio Code logo
+
+Git : Git est un système de contrôle de version qui a été inventé et développé par Linus Torvalds , également connu pour l’invention du noyau Linux, en 2005. Il s’agit d’un outil de développement qui aide une équipe de développeurs à gérer les changements apportés au code source au fil du temps. Les logiciels de contrôle de version gardent une trace de chaque changement apporté au code dans un type spécial de base de données. Git est le plus connu des VCS (versionning control system), c’est un projet open source très puissant qui est utilisé par l’ensemble de la communauté des développeurs. [15]
+
+Figure 2.5 : Git logo
+
+GitHub : GitHub est un site web et un service cloud qui aide les développeurs à stocker et gérer leur code, ainsi qu'à suivre et contrôler ses modifications. [16]
+
+Figure 2.6 : GitHub logo
+
+Flutter : Flutter est un Framework de développement mobile open source proposé par Google. Il permet aux développeurs de créer des applications pour les plates-formes iOS et Android à partir d’un code source unique. Flutter utilise le langage de programmation Dart, qui est conçu pour être facile à apprendre et à utiliser. Il offre un large éventail de widgets et de bibliothèques pour aider les développeurs à créer rapidement des interfaces utilisateur attrayantes et performantes. Flutter est particulièrement apprécié des développeurs pour sa vitesse de développement et sa flexibilité. Il permet de prévisualiser en temps réel les modifications apportées au code, ce qui peut accélérer considérablement le processus de développement. Il est également capable de générer du code natif pour les plates-formes iOS et Android, ce qui permet aux applications de fonctionner de manière fluide et rapide. [17]
+
+Figure 2.7 : Flutter logo
+
+Firebase : Firebase est une plateforme de développement d’applications mobiles et web développée par Google. Elle fournit aux développeurs une variété de services et d’outils pour les aider à développer des applications de haute qualité, à améliorer leur base d’utilisateurs et à monétiser leurs applications. Firebase offre des fonctionnalités allant de l’hébergement et du stockage de données en temps réel à l’authentification des utilisateurs, en passant par des outils d’analyse et de reporting.
+
+Fonctionnalités principales :
+
+Realtime Database : une base de données NoSQL hébergée dans le cloud qui permet de stocker et de synchroniser les données entre les utilisateurs en temps réel.
+
+Authentication : un service qui facilite l’authentification des utilisateurs à travers divers fournisseurs comme Google, Facebook, Twitter et plus encore.
+
+Cloud Firestore : une base de données flexible et évolution de la Realtime Database offrant des fonctionnalités améliorées pour le stockage de données structurées.
+
+Cloud Functions : permet d’exécuter des fonctions backend en réponse à des événements déclenchés par des fonctionnalités Firebase et des requêtes HTTPS.
+
+Cloud Storage : offre un stockage d’objets sécurisé pour les applications, avec une authentification robuste et l’encryption des données.
+
+Firebase Analytics : un outil d’analyse qui permet de comprendre comment les utilisateurs interagissent avec l’application.
+
+Hosting : propose un hébergement de contenu web statique et dynamique avec une mise en cache globale rapide. [18]
+
+Figure 2.8 : Firebase logo
+
+Twilio SendGrid : Twilio SendGrid est un SMTP (Simple Mail Transfer Protocol) provider dans le Cloud qui agit comme un moteur de livraison d’emails visant à servir à la fois les besoins marketing que plus techniques. Intégrée à Azure en décembre 2012, cette solution a gère les détails techniques de la livraison des emails, tels que :
+
+la mise à l’échelle de l’infrastructure ,
+
+la sensibilisation des ISP (Internet Service Provider) ,
+
+le monitoring ,
+
+l’analyse en temps réel. [19]
+
+Figure 2.9 : SendGrid logo
+
+STM32CubeMX : STM32CubeMX est un outil graphique qui permet une configuration très simple des microcontrôleurs et microprocesseurs STM32, ainsi que la génération du code C d'initialisation. [20]
+
+Figure 2.10 : STM32CubeMX logo
+
+STM32CubeIDE : STM32CubeIDE  est une plateforme de développement C/C++ avancée offrant des fonctionnalités de configuration de périphériques, de génération et de compilation de code, ainsi que de débogage pour les microcontrôleurs et microprocesseurs STM32. [21]
+
+Figure 2.11 : STM32CubeIDE logo
+
+4.3 Matériels utilisés
+
+Dans ce paragraphe, nous présentons les principaux composants matériels utilisés pour mener à bien la réalisation et la mise en place de notre système IoT.
+
+NUCLEO-L476RG : Les composants STM32L476xx sont des microcontrôleurs ultra-basse consommation basés sur le cœur RISC 32 bits hautes performances Arm Cortex-M4  ,cadencé jusqu'à 80 MHz. [22]
+
+Figure 2.12 : NUCLEO-L476RG 
+
+DHT11 : Le DHT11 est un capteur numérique composé d’une thermistance et d’un capteur d’humidité capacitif. Il présente les caractéristiques suivantes : alimentation de 3,5 à 5 V, détection de la température de 0 à 50 degrés avec une précision de 2 degrés, détection de l’humidité de 20 à 95 \textbackslash{}% avec une précision de 5 \textbackslash{}%. [23]
+
+Figure 2.13 : Capteur DHT11  
+
+Ky026 flamme : Le capteur de flamme KY-026 est un module capteur qui utilise une photorésistance pour détecter la lumière infrarouge émise par une flamme. [24]
+
+Figure 2.14 : Capteur Flamme Ky026
+
+MQ2 Gaz : Un capteur MQ2 permettant de détecter plusieurs type de gaz: le LPG, Isobutane (C4H10), le propane (C3H8), le méthane (CH4), l'hydrogène (H2), l'alcool et la fumée. [25]
+
+Figure 2.15 : Capteur Gaz MQ2
+
+ESP-01 : L'ESP-01 est un petit module permettant de connecter n'importe quel microcontrôleur à un réseau WiFi pour un très faible coût. Il est principalement composé d'un ESP8266 fabriqué par la société Chinoise Espressif. [26]
+
+Figure 2.16 : Module WiFi ESP-01
+
+Relais : Un Relais est un dispositif électronique qui permet de commander un circuit électrique à partir d’un signal de commande de faible puissance . [27]
+
+Figure 2.17 : Relais
+
+5  Architecture  du  notre  Système  IoT 
+
+L'architecture présentée dans la figure 2.15 ci-dessous illustre le fonctionnement de notre système. Chaque utilisateur authentifié via l'application mobile peut ajouter ou supprimer des dispositifs tels que des lampes (normales ou à intensité variable), des stores électriques et des prises. Le propriétaire a la possibilité de commander les actionneurs présents dans la maison. Chaque commande est envoyée à la plateforme ThingSpeak.
+
+Les actionneurs sont connectés à un microcontrôleur STM32 équipé du système d'exploitation temps réel FreeRTOS (FreeRTOS est un système d'exploitation pour microcontrôleurs, open source et en temps réel, qui facilite la programmation, le déploiement, la sécurisation, la connexion et la gestion de petits appareils périphériques à faible consommation [28]). Ce microcontrôleur teste toujours s’il y a des nouvelles commandes ajoutées sur ThingSpeak et les applique aux actionneurs concernés. Par ailleurs, le microcontrôleur reçoit les données provenant de divers capteurs installés dans la maison, tels que le capteur DHT11 (mesurant la température et l'humidité), le détecteur de gaz MQ-2 et le capteur de flamme. Ces données sont ensuite transmises à ThingSpeak via le module Wi-Fi ESP8266.
+
+Donc, la plateforme ThingSpeak joue le rôle d'un intermédiaire entre les actionneurs, les capteurs et l'application mobile. Parallèlement, Firebase assure l'authentification sécurisée des utilisateurs avec une gestion différenciée des rôles (Propriétaire et Technicien) et stocke les informations relatives aux utilisateurs et aux dispositifs dans Firestore. Toutes les commandes des utilisateurs se lancent à partir de l'interface de l'application mobile développée en Flutter, qui propose des modules pour la gestion des dispositifs, le contrôle, la surveillance environnementale et l'administration du système.
+
+Figure 2.18 : Architecture du notre Système IoT 
+
+Conclusion
+
+Dans ce chapitre, nous avons identifié  les acteurs impliqués et leurs interactions avec le système. Puis , nous présentons les besoins fonctionnels et non fonctionnels de notre projet. Ensuit , nous définissons la structure organisationnelle et nous déterminons le backlog produit et la planification des sprints  . Enfin , nous avons ainsi clôturé ce chapitre par une présentation de l'environnement de travail, détaillant  les  environnements  matériel et logiciel, ainsi que des composants matériels utilisés.Le prochain chapitre sera dédié à la Sprint 1 – Gestion  des dispositifs .
+
+Chapitre 3 : Sprint 1 – Gestion  des dispositifs 
+
+Introduction 
+
+Dans ce chapitre consacré au Sprint 1, nous abordons la première itération de développement du projet. Nous commençons par la définition du sprint backlog, qui regroupe les tâches à accomplir durant ce sprint. Ensuite, nous procédons à l’analyse de quelques cas d’utilisation. Enfin, nous présentons la réalisation, avec le développement d’une première version de l’application mobile ainsi que le montage du système IoT.
+
+1 Spécification fonctionnelle
+
+Dans cette section, nous avons  présenté le backlog du sprint 1.
+
+Tableau 3.1 : Backlog du sprint 1
+
+ID
+
+User Stories
+
+Acteur
+
+ID
+
+Tâche
+
+Tâches
+
+Priorité
+
+1
+
+En tant qu’utilisateur de l’application, je peux m’authentifier
+
+Pour réaliser mes fonctionnalités.
+
+Propriétaire
+
+1.1
+
+Création et développement d’une interface pour l’authentification.
+
+Élevée
+
+Technicien
+
+1.2
+
+Utiliser l’interface de l’authentification pour s’authentifier.
+
+Élevée
+
+2
+
+En tant que utilisateur,
+
+je peux consulter liste
+
+de luminosité .
+
+Propriétaire
+
+2.1
+
+Création et
+
+développement d’une
+
+interface pour consulter
+
+liste de luminosité .
+
+Élevée
+
+Technicien
+
+2.2
+
+Utiliser l’interface de
+
+consulter liste de
+
+luminosité.
+
+Élevée
+
+3
+
+En tant que utilisateur,
+
+je peux consulter liste
+
+des prises.
+
+Propriétaire
+
+3.1
+
+Création et
+
+développement d’une
+
+interface pour consulter
+
+liste des prises.
+
+Élevée
+
+Technicien
+
+3.2
+
+Utiliser l’interface de
+
+consulter liste des prises.
+
+Élevée
+
+4
+
+En tant que utilisateur,
+
+je peux consulter liste
+
+des stores .
+
+Propriétaire
+
+4.1
+
+Création et
+
+développement d’une
+
+interface pour consulter
+
+liste des stores .
+
+Élevée
+
+Technicien
+
+4.2
+
+Utiliser l’interface de
+
+consulter liste des stores.
+
+Élevée
+
+5
+
+En tant que utilisateur,
+
+je peux ajouter  une lampe normale ou  une lampe variée.
+
+Propriétaire
+
+5.1
+
+Développer la fonction  ajouter  une lampe normale ou  une lampe variée.
+
+Élevée
+
+Technicien
+
+5.2
+
+Utiliser la fonction  ajouter  une lampe normale ou  une lampe variée.
+
+Élevée
+
+6
+
+En tant que utilisateur ,
+
+je peux supprimer  une lampe normale ou  une lampe variée.
+
+Propriétaire
+
+6.1
+
+Développer la fonction supprimer  une lampe normale ou  une lampe variée.  
+
+Élevée
+
+Technicien
+
+6.2
+
+Utiliser la fonction  supprimer  une lampe normale ou  une lampe variée.
+
+Élevée
+
+7
+
+En tant que utilisateur,
+
+je peux contrôler   une lampe normale ou  une lampe variée.
+
+Propriétaire
+
+7.1
+
+Création et développement d’une interface pour  contrôler   une lampe normale ou  une lampe variée.
+
+Élevée
+
+8
+
+En tant que utilisateur,
+
+je peux ajouter  une prise.
+
+Propriétaire
+
+8.1
+
+Développer la fonction ajouter  une prise.
+
+Élevée
+
+Technicien
+
+8.2
+
+Utiliser la fonction   ajouter  une prise.
+
+Élevée
+
+9
+
+En tant que utilisateur,
+
+je peux supprimer  une prise.
+
+Propriétaire
+
+9.1
+
+Développer la fonction supprimer  une prise.
+
+Élevée
+
+Technicien
+
+9.2
+
+Utiliser la fonction   supprimer  une prise.
+
+Élevée
+
+10
+
+En tant que utilisateur,
+
+je peux contrôler   une prise.
+
+Propriétaire
+
+10.1
+
+Création et développement d’une interface pour  contrôler   une prise.
+
+Élevée
+
+11
+
+En tant que utilisateur,
+
+je peux ajouter  un store électrique.
+
+Propriétaire
+
+11.1
+
+Développer la fonction ajouter  un store électrique.
+
+Élevée
+
+Technicien
+
+11.2
+
+Utiliser la fonction   ajouter  un store électrique.
+
+Élevée
+
+12
+
+En tant que utilisateur,
+
+je peux supprimer  un store électrique.
+
+Propriétaire
+
+12.1
+
+Développer la fonction supprimer  un store électrique.
+
+Élevée
+
+Technicien
+
+9.2
+
+Utiliser la fonction   supprimer  un store électrique.
+
+Élevée
+
+13
+
+En tant que utilisateur,
+
+je peux contrôler   un store électrique.
+
+Propriétaire
+
+13.1
+
+Création et développement d’une interface pour  contrôler   un store électrique.
+
+Élevée
+
+2 Analyse des cas d’utilisations 
+
+Dans cette section, nous analysons le cas d’utilisation “S’authentifier” . Parmi les différentes fonctionnalités liées à la gestion des dispositifs, nous avons choisi de détailler le cas d’utilisation “Gérer  luminosité” .
+
+2.1 Analyse du cas d’utilisation S’authentifier
+
+Dans cette section, nous présentons le diagramme de cas d'utilisation du cas  S’authentifier illustré par la figure 3.1, ainsi que le diagramme de séquence correspondant, illustré par la figure 3.2.
+
+Figure 3.1 : Diagramme de cas d’utilisation ” S’authentifier ”
+
+2.2 Analyse du cas d’utilisation Ajouter une lampe
+
+Dans cette section, nous présentons le diagramme de cas d'utilisation du cas “Ajouter une lampe”  illustré par la figure 3.3, ainsi que le diagramme de séquence correspondant, illustré par la figure 3.4.
+
+Figure 3.3 : Diagramme de cas d’utilisation ” Ajouter une lampe”
+
+Figure 3.2 : Diagramme de séquence du cas d’utilisation ” S’authentifier ”
+
+Figure 3.4 : Diagramme de séquence du cas d’utilisation ” Ajouter une lampe”
+
+2.3 Analyse du cas d’utilisation Supprimer une lampe
+
+Dans cette section, nous présentons le diagramme de cas d'utilisation du cas “Supprimer une lampe”  illustré par la figure 3.5, ainsi que le diagramme de séquence correspondant, illustré par la figure 3.6.
+
+Figure 3.5 : Diagramme du cas d’utilisation ” Supprimer une lampe”
+
+2.4 Analyse du cas d’utilisation Contrôler une lampe
+
+Dans cette section, nous présentons le diagramme de cas d'utilisation du cas “Contrôler une lampe”  illustré par la figure 3.7, ainsi que le diagramme de séquence correspondant, illustré par la figure 3.8.
+
+Figure 3.7 : Diagramme de cas d’utilisation” Contrôler une lampe”
+
+Figure 3.6 : Diagramme de séquence du cas d’utilisation ” Supprimer une lampe”
+
+Figure 3.8 : Diagramme de séquence du cas d’utilisation ” Contrôler une lampe”
+
+3 Réalisation 
+
+Dans cette section, nous avons présenté quelques interfaces de l’application mobile ainsi que le montage du système IoT.
+
+3.1Interfaces de l’application mobile
+
+Dans cette section, nous avons présenté quelques interfaces de l’application mobile.
+
+3.1.1Interface d’authentification
+
+Pour accéder à son propre menu, l’utilisateur doit d’abord s’authentifier en saisissant correctement son identifiant et son mot de passe.
+
+Figure 3.9 : Interface d’authentification
+
+Figure 3.10 : Exemples de messages d’erreur d’authentification
+
+3.1.2 Interface d’accueil  et  menu
+
+À travers l’interface d’accueil et le menu propre à chaque utilisateur, ce dernier peut choisir la fonctionnalité qu’il souhaite réaliser.
+
+Figure 3.11 : Interface d’ accueil et menu pour propriétaire
+
+Figure 3.12 : Interface d’ accueil et menu pour technicien
+
+3.1.3 Interfaces de gestion des dispositifs
+
+À travers ces interfaces de consultation des dispositifs, l’utilisateur peut consulter la liste de chaque type de dispositif connecté, tels que les lampes, les prises et les stores électriques.
+
+Figure 3.13 : Interfaces de consultation des dispositifs
+
+Depuis ces interfaces de consultation des dispositifs, l'utilisateur peut accéder à la page d'ajout d’un nouveau dispositif en cliquant sur le bouton "+".En cliquant sur l'icône de suppression, une boîte de dialogue s'affiche pour confirmer la suppression du dispositif sélectionné.En sélectionnant un dispositif dans la liste, l'utilisateur est dirigé vers une page de contrôle dédiée. Cette page permet de visualiser l’état actuel du dispositif et permet à l’utilisateur de le contrôler.Enfin, un clic sur le bouton en forme de flèche permet de revenir à la page précédente.
+
+Figure 3.14 : Interfaces d’ajout des dispositifs
+
+Figure 3.15 : Boîtes de dialogue de confirmation de la suppression d’un dispositif.
+
+Figure 3.16 : Interfaces de contrôle des dispositifs
+
+3.2 Montage du premier prototype
+
+Ce montage illustré par la figure 3.17 présente un premier prototype de maison intelligente connectée, composé de plusieurs éléments interconnectés :
+
+Cadre orange - Simulation de store électrique : Deux lampes qui simulent l'ouverture et la fermeture automatique d'un store électrique.
+
+Cadre jaune - Prise  : Une prise permettant d'alimenter ou de couper l'alimentation d'appareils connectés.
+
+Cadre rose - Éclairage : Une lampe qui peut être allumée ou éteinte.
+
+Cadre vert - Module WiFi ESP8266: Le cœur de communication du système, qui permet le contrôle à distance via une application mobile.
+
+Cadre bleu - Éclairage à intensité variable : Une LED, simulant un éclairage  à intensité variable.
+
+Cadre violet - Module de relais : Des relais, alimentée par une tension de 220V pour contrôler les charges plus importantes.
+
+Figure 3.17 : Premier prototype de maison intelligente
+
+Conclusion
+
+Dans ce chapitre , nous avons structuré les tâches à travers un sprint backlog. L’analyse des cas d’utilisation a permis de mieux comprendre les besoins utilisateurs. Par ailleurs, la première version de l’application mobile a été développée, accompagnée d’un montage du système IoT. Le prochain chapitre sera dédié à la  Sprint 2 – Gestion des demandes d’accès, suivi des données et des notifications.
+
+Chapitre 4 : Sprint 2 – Gestion des demandes d’accès, suivi des données et des notifications
+
+Introduction 
+
+Dans ce chapitre, nous traitons du Sprint 2, correspondant à la deuxième itération du développement du projet. Nous commençons par l’élaboration du sprint backlog, qui regroupe l’ensemble des tâches planifiées pour cette phase. Ensuite, nous analysons les cas d’utilisation retenus. Enfin, nous présentons les travaux réalisés, notamment le développement de la seconde version de l’application mobile et le montage du système IoT.
+
+1 Spécification fonctionnelle
+
+Dans cette section, nous avons  présenté le backlog du sprint 2.
+
+Tableau 4.1 : Backlog du sprint 2
+
+ID
+
+User Stories
+
+Acteur
+
+ID
+
+Tâche
+
+Tâches
+
+Priorité
+
+1
+
+En tant qu’utilisateur de l’application, je peux m’inscrire.
+
+Technicien
+
+1.1
+
+Création et développement d’une interface pour l’inscription.
+
+Élevée
+
+2
+
+En tant qu’utilisateur de l’application, je peux consulter la liste des utilisateurs inscrits.
+
+Propriétaire
+
+2.1
+
+Création et développement d’une interface pour consulter la liste des utilisateurs inscrits.
+
+Élevée
+
+3
+
+En tant qu’utilisateur de l’application, je peux Accepter demandes d’accès.
+
+Propriétaire
+
+3.1
+
+Développer la fonction Accepter demandes d’accès.
+
+Élevée
+
+4
+
+En tant qu’utilisateur de l’application, je peux Supprimer demandes d’accès.
+
+Propriétaire
+
+4.1
+
+Développer la fonction Supprimer demandes d’accès.
+
+Élevée
+
+5
+
+En tant qu’utilisateur de l’application, je peux Consulter l'histogramme de température mensuel de l'année complète.
+
+Propriétaire
+
+5.1
+
+Création et développement d’une interface pour Consulter l'histogramme de température mensuel de l'année complète.
+
+Moyenne
+
+6
+
+En tant qu’utilisateur de l’application, je peux Personnaliser l'affichage  de l'histogramme de température.
+
+Propriétaire
+
+6.1
+
+Développer la fonction Personnaliser l'affichage de l'histogramme de température.
+
+Moyenne
+
+7
+
+En tant qu’utilisateur de l’application, je peux recevoir des notifications.
+
+Propriétaire
+
+7.1
+
+Création et développement d’une interface pour consulter les notifications.
+
+Élevée
+
+8
+
+En tant qu’utilisateur de l’application, je peux suivre des données capteur (température, humidité).
+
+Propriétaire
+
+8.1
+
+Développer la fonction d’affichage de température ambiante et humidité.
+
+Moyenne
+
+2 Analyse des cas d’utilisations 
+
+Dans cette section, nous analysons les cas d’utilisation du sprint 2 .
+
+2 .1 Analyse des cas d’utilisations S’inscrire
+
+Dans cette section, nous présentons le diagramme de cas d'utilisation du cas “S’inscrire”  illustré par la figure 4.1, ainsi que le diagramme de séquence correspondant, illustré par la figure 4.2.
+
+Figure 4.1 : Diagramme de cas d’utilisation “S’inscrire”
+
+4.2 : Diagramme de séquence du cas d’utilisation ” S’inscrire”
+
+2 .2 Analyse des cas d’utilisations Recevoir des notifications
+
+Dans cette section, nous présentons le diagramme de cas d'utilisation du cas “Recevoir des notifications”  illustré par la figure 4.3, ainsi que le diagramme de séquence correspondant, illustré par la figure 4.4.
+
+Figure 4.3 : Diagramme de cas d’utilisation “Recevoir des notifications”
+
+4.4: Diagramme de séquence du cas d’utilisation ” Recevoir des notifications”
+
+2 .3 Analyse des cas d’utilisations Suivre des données capteur
+
+Dans cette section, nous présentons le diagramme de cas d'utilisation du cas “Suivre des données capteur”  illustré par la figure 4.5, ainsi que le diagramme de séquence correspondant, illustré par la figure 4.6.
+
+Figure 4.5 : Diagramme de cas d’utilisation “Suivre des données capteur”
+
+4.6: Diagramme de séquence du cas d’utilisation ” Suivre des données capteur”
+
+2 .4 Analyse des cas d’utilisations Suivre température via Dashboard
+
+Dans cette section, nous présentons le diagramme de cas d'utilisation du cas “Suivre température via Dashboard”  illustré par la figure 4.7, ainsi que le diagramme de séquence correspondant, illustré par la figure 4.8.
+
+Figure 4.7 : Diagramme de cas d’utilisation “Suivre température via Dashboard”
+
+2 .5 Analyse des cas d’utilisations Accepter demandes d’accès
+
+Dans cette section, nous présentons le diagramme de cas d'utilisation du cas “Accepter demandes d’accès”  illustré par la figure 4.9, ainsi que le diagramme de séquence correspondant, illustré par la figure 4.10.
+
+Figure 4.9 : Diagramme de cas d’utilisation “Accepter demandes d’accès”
+
+4.6: Diagramme de séquence du cas d’utilisation ” Suivre des données capteur”
+
+4.10: Diagramme de séquence du cas d’utilisation ” Accepter demandes d’accès”
+
+2 .6 Analyse des cas d’utilisations Supprimer demandes d’accès
+
+Dans cette section, nous présentons le diagramme de cas d'utilisation du cas “Supprimer demandes d’accès”  illustré par la figure 4.11, ainsi que le diagramme de séquence correspondant, illustré par la figure 4.12.
+
+Figure 4.11 : Diagramme de cas d’utilisation “Supprimer demandes d’accès”
+
+Figure 4.12 : Diagramme de séquence du cas d’utilisation ” Supprimer demandes d’accès”
+
+3 Réalisation 
+
+Dans cette section, nous avons présenté quelques interfaces de l’application mobile ainsi que le montage du système IoT.
+
+3.1Interfaces de l’application mobile
+
+Dans cette section, nous avons présenté quelques interfaces de l’application mobile.
+
+3.1.1 Interface d’inscription
+
+À travers cette interface d’inscription, l’utilisateur peut facilement créer un compte en renseignant ses informations personnelles dans un formulaire . Aussi , Un email automatique est envoyé au propriétaire pour l’informer de la nouvelle inscription.
+
+Figure 4.13 : Interface d’inscription
+
+Figure 4.14 : Messages d’erreur et email automatique envoyé au propriétaire
+
+3.1.2 Interface de consultation des notifications
+
+À travers cette interface de consultation des notifications, l’utilisateur est informé en temps réel des alertes critiques telles que la détection de fuite de gaz ou d’incendie, afin de réagir rapidement en cas de danger. Aussi ,une boîte de notification s’affiche automatiquement en cas de nouvelle alerte détectée.
+
+Figure 4.15 : Interface de consultation des notifications
+
+3.1.3 Interface d’accueil
+
+Cette interface permet à l’utilisateur d’accéder aux informations collectées par les capteurs, comme la température ambiante et l’humidité, pour un suivi précis de l’environnement.
+
+Figure 4.16 : Interface d’accueil
+
+3.1.4 Interface de suivi de la température via Dashboard
+
+À travers cette interface de suivi de la température via Dashboard, l’utilisateur peut consulter un histogramme mensuel représentant l’évolution de la température sur l’année, avec la possibilité de personnaliser l’affichage en modifiant la date de début et de fin, ainsi que le type de visualisation (par jour, par semaine ou par mois). 
+
+Figure 4.17 : Interface de suivi de la température via Dashboard
+
+3.1.5 Interface de gestion des demandes d’accès 
+
+Cette interface permet au propriétaire de gérer les utilisateurs inscrits : en cliquant sur l’icône de l’horloge, une boîte s’affiche pour sélectionner la durée d’autorisation (24h, 48h ou 72h), après l’accès est automatiquement désactivé une fois la durée écoulée. En cliquant sur l’icône de suppression, une boîte de confirmation apparaît pour valider la suppression de l’utilisateur. Aussi, un email automatique est envoyé à l’utilisateur pour l’informer que son compte a été activé ou supprimé.
+
+Figure 4.18 : Interface de gestion des demandes d’accès
+
+3.2 Montage du deuxième prototype
+
+Ce montage illustré par la figure 4.19  présente un deuxième prototype de maison intelligente connectée. Nous avons ajouté au montage précédent, illustré dans la figure 3.17, les composants suivants :
+
+Cadre rouge - Capteur DHT11 : Capteur de température et d'humidité qui surveille en temps réel les conditions environnementales de l'habitat.
+
+Cadre bleu - Capteur de flamme : Détecteur d'incendie qui identifie la présence de flammes pour déclencher les systèmes d'alerte de sécurité.
+
+Cadre vert - Capteur de gaz : Détecteur de fuites de gaz combustibles qui surveille la qualité de l'air et détecte les concentrations dangereuses de gaz.
+
+Cadre rose - Buzzer d'alarme : Système d'alerte sonore qui se déclenche automatiquement lors de la détection d'une fuite de gaz ou d'un incendie par les capteurs de sécurité.
+
+Figure 4.19 : Deuxième prototype de maison intelligente
+
+Conclusion
+
+Dans ce chapitre , nous avons structuré les tâches à travers un sprint backlog. L’analyse des cas d’utilisation a permis de mieux comprendre les besoins utilisateurs. Par ailleurs, la deuxième version de l’application mobile a été développée, accompagnée d’un montage du système IoT. 
+
+Conclusion Générale
+
+Durant notre projet, nous avons conçu et réalisé un système domotique intelligent basé sur l’Internet des Objets (IoT), visant à améliorer le confort et  la sécurité dans les habitations modernes. 
+
+Dans un premier temps, nous avons développé une architecture technique  en intégrant divers capteurs (DHT11, MQ-2, détecteur de flamme) et actionneurs (lampes, store, prise), pilotés par un microcontrôleur STM32 sous FreeRTOS. Pour assurer la connectivité, nous avons utilisé le module Wi-Fi ESP8266 ainsi que la plateforme ThingSpeak, garantissant un échange de données fluide et sécurisé.
+
+Ensuite, nous avons conçu une application mobile avec Flutter, offrant une interface qui permet aux utilisateurs de gérer leurs équipements, consulter les données environnementales en temps réel et recevoir des notifications instantanées en cas de détection de gaz ou d’incendie. Un système de gestion de profils (Propriétaire / Technicien) basé sur Firebase  a été mis en place pour assurer un accès sécurisé et différencié aux fonctionnalités.
+
+Ce projet nous a apporté de nombreux bénéfices, tant sur le plan théorique que pratique. Nous avons approfondi nos connaissances sur les architectures IoT, sur les plateformes cloud comme Firebase et ThingSpeak, sur la programmation embarquée avec STM32 et sur  le développement mobile en Flutter.
+
+En termes de perspectives, plusieurs évolutions sont envisageables : ajouter de nouveaux capteurs (qualité de l’air, luminosité, mouvement), intégrer un moteur d’intelligence artificielle pour anticiper les besoins des utilisateurs, ou encore développer des scénarios automatisés. Une ouverture vers d’autres écosystèmes comme les assistants vocaux (Google Assistant, Alexa) serait également une piste intéressante à explorer.
+
+Netographie
+
+[1] 
+
+«Comelit Group,» [En ligne]. Available: https://comelitgroup.fr/le-groupe/. [Accès le 09 05 2025].
+
+[2] 
+
+«JUNG,» [En ligne]. Available: https://www.jung-group.com/fr-FR/Produits/Systemes/JUNG-HOME/. [Accès le 22 04 2025].
+
+[3] 
+
+«Legrand,» [En ligne]. Available: https://www.legrand.fr/maison-connectee/appli-home-control-pilotez-votre-maison-connectee. [Accès le 22 04 2025].
+
+[4] 
+
+«DeltaConso Expert,» [En ligne]. Available: https://www.deltaconso-expert.fr/blog/internet-of-things-iot. [Accès le 27 04 2025].
+
+[5] 
+
+«IoT Industriel,» [En ligne]. Available: https://iotindustriel.com/iot-iiot/architecture-iot-lessentiel-a-savoir/. [Accès le 27 05 2025].
+
+[6] 
+
+«JDN,» [En ligne]. Available: https://www.journaldunet.fr/web-tech/dictionnaire-de-l-iot/1440684-microcontroleur-definition-et-composants/. [Accès le 27 04 2025].
+
+[7] 
+
+«dDruid,» [En ligne]. Available: https://ddruid.io/capteurs-iot/. [Accès le 16 05 2025].
+
+[8] 
+
+«tameson,» [En ligne]. Available: https://tameson.fr/pages/actionneur. [Accès le 16 05 2025].
+
+[9] 
+
+«datascientest,» [En ligne]. Available: https://datascientest.com/comment-devenir-cloud-expert. [Accès le 16 05 2025].
+
+[10] 
+
+«Free-Work,» [En ligne]. Available: https://www.free-work.com/fr/tech-it/blog/actualites-informatiques/que-sont-les-ihm. [Accès le 28 04 2025].
+
+[11] 
+
+«YTL,» [En ligne]. Available: https://fr.ytl-e.com/news/quarterly-publication/the-communication-methods-of-iot-have-many-advantages-and-application.html. [Accès le 09 05 2025].
+
+[12] 
+
+«Atlassian,» [En ligne]. Available: https://www.atlassian.com/fr/agile/scrum. [Accès le 28 04 2025].
+
+[13] 
+
+«sokeo,» [En ligne]. Available: https://sokeo.fr/conception-uml-application-web/. [Accès le 28 04 2025].
+
+[14] 
+
+«bility,» [En ligne]. Available: https://bility.fr/definition-visual-studio-code/. [Accès le 12 05 2025].
+
+[15] 
+
+«nextdecision,» [En ligne]. Available: https://www.next-decision.fr/wiki/qu-est-ce-que-git. [Accès le 12 05 2025].
+
+[16] 
+
+«kinsta,» [En ligne]. Available: https://kinsta.com/knowledgebase/what-is-github/. [Accès le 12 05 2025].
+
+[17] 
+
+«bility,» [En ligne]. Available: https://bility.fr/definition-flutter/. [Accès le 12 05 2025].
+
+[18] 
+
+«v-labs,» [En ligne]. Available: https://www.v-labs.fr/glossaire/firebase/. [Accès le 29 05 2025].
+
+[19] 
+
+«cellenza blog,» [En ligne]. Available: https://blog.cellenza.com/cloud-2/twilio-sendgrid-le-smtp-provider-dans-le-cloud/. [Accès le 04 06 2025].
+
+[20] 
+
+«STMicroelectronics,» [En ligne]. Available: https://www.st.com/en/development-tools/stm32cubemx.html. [Accès le 12 05 2025].
+
+[21] 
+
+«wiki by stmicroelectronics,» [En ligne]. Available: https://wiki.stmicroelectronics.cn/stm32mpu/wiki/STM32CubeIDE. [Accès le 12 05 2025].
+
+[22] 
+
+«STMicroelectronics,» [En ligne]. Available: https://www.st.com/en/microcontrollers-microprocessors/stm32l476rg.html. [Accès le 12 05 2025].
+
+[23] 
+
+«arduino-france,» [En ligne]. Available: https://arduino-france.site/dht11-arduino/. [Accès le 29 05 2025].
+
+[24] 
+
+«robotique,» [En ligne]. Available: https://www.robotique.site/tutoriel/capteur-de-flamme-ky-026/. [Accès le 29 05 2025].
+
+[25] 
+
+«Go Tronic,» [En ligne]. Available: https://www.gotronic.fr/art-capteur-de-gaz-mq2-31522.htm?srsltid=AfmBOopfU\textbackslash{}_6jVLkCUmKhtrWQHE4z\textbackslash{}_kc\textbackslash{}_BVBiQS-pGRZTR5NrTyLyUBv3. [Accès le 12 05 2025].
+
+[26] 
+
+[En ligne]. Available: https://www.electro-info.ovh/esp8266-presentation-du-module-ESP-01. [Accès le 29 05 2025].
+
+[27] 
+
+«moussasoft,» [En ligne]. Available: https://www.moussasoft.com/relais-avec-arduino/. [Accès le 29 05 2025].
+
+[28] 
+
+[En ligne]. Available: https://aws.amazon.com/fr/freertos/faqs/. [Accès le 29 05 2025].
+
+Ce projet de fin d'études vise à mettre en place un système de maison connectée avec l'aide de l'Internet des Objets (IoT). Le but est de rendre une maison moderne plus confortable, sécurisée et économe en énergie.  On a Installé des capteurs pour la température, l'humidité, le gaz et le flamme, ainsi que des dispositifs comme des lampes, des prises et des stores. Tout cela est contrôlé par un microcontrôleur STM32. De plus, on a créé une application mobile qui permet aux utilisateurs de contrôler et gérer leurs équipements, de recevoir des alertes en temps réel et de consulter des données sur l'environnement.
+
+Mots clés :  Internet des Objets, des capteurs, des dispositifs, microcontrôleur STM32,  application mobile .
+
+Résumé
+
+Abstract
+
+This final-year project aims to implement a smart home system using the Internet of Things (IoT). The goal is to make a modern house more comfortable, secure, and energy-efficient. We installed sensors for temperature, humidity, Gas, and flame, as well as devices such as lamps, sockets, and electric blinds. All these components is controlled by an STM32 microcontroller. In addition, we have developed a mobile application that allows users to control and manage their devices, receive real-time alerts, and monitor environmental data.
+
+Keywords: Internet of Things, sensors, devices, STM32 microcontroller, mobile application.
+
+الملخص
+
+يهدف مشروع التخرج هذا إلى إقامة نظام منزل ذكي مترابط بمساعدة إنترنت الأشياء. الغرض هو جعل المنزل العصري أكثر راحة وأماناً وتوفيراً في الطاقة. تم تركيب أجهزة استشعار لدرجة الحرارة والرطوبة والغاز واللهب، بالإضافة إلى أجهزة مثل المصابيح والمقابس الكهربائية والستائر. يتم التحكم في كل هذا بواسطة متحكم إلكتروني دقيق من نوع اس تي ام 32. علاوة على ذلك، تم إنشاء تطبيق للهاتف يسمح للمستخدمين بالتحكم في معداتهم وإدارتها، وتلقي الإنذارات في الوقت الفعلي ومراجعة البيانات البيئية. 
+
+الكلمات المفتاحية: إنترنت الأشياء، أجهزة الاستشعار، الأجهزة الذكية، المتحكم الإلكتروني الدقيق اس تي ام 32، تطبيق الهاتف.
+
+\end{document}
